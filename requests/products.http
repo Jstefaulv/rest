@@ -1,0 +1,46 @@
+###
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/?page=1&size=2
+
+
+###
+GET http://localhost:3000/?nombre=Violet
+
+###
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+  "nombre":"The Legend of Zelda: Breath of the Wild",
+  "categoria":"Nintendo Switch",
+  "precio":"69990"
+}
+
+###
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+  "nombre":"Stray",
+  "categoria":"PS5",
+  "precio":"49990"
+}
+
+
+###
+GET http://localhost:3000/636cfd4afbf0ca5731f88972
+
+###
+DELETE http://localhost:3000/636cfd4afbf0ca5731f88972
+
+###
+PUT http://localhost:3000/636d4c8dd035dd7622bc93f9
+Content-Type: application/json
+
+{
+  "nombre":"Pokémon Scarlet NSW",
+  "categoria":"Nintendo Switch",
+  "precio":"69990"
+}
